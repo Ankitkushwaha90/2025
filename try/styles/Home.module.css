@@ -1,0 +1,23 @@
+/* Home.module.css */
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+  }
+  
+  .title {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+  }
+  
+  .description {
+    font-size: 1.25rem;
+    color: #666;
+    text-align: center;
+  }
+  

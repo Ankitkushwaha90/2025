@@ -1,0 +1,27 @@
+.subNavbar {
+    background-color: #8b0000;
+    padding: 20px;
+    width: 250px;
+    position: fixed;
+    height: 100vh;
+    overflow-y: auto;
+  }
+  
+  .subNavbar h2 {
+    color: #ffcccc;
+  }
+  
+  .subNavbar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .subNavbar li {
+    margin: 10px 0;
+  }
+  
+  .subNavbar a {
+    color: #fff;
+    text-decoration: none;
+  }
+  

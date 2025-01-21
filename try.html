@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spiritual Satya</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1a0000; /* Deep Dark Red */
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        /* Top Navbar */
+        .top-navbar {
+            background-color: #8b0000; /* Dark Red */
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+        }
+
+        .top-navbar .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #ffcccc; /* Soft Light Red */
+        }
+
+        .top-navbar ul {
+            list-style: none;
+            display: flex;
+        }
+
+        .top-navbar ul li {
+            margin: 0 15px;
+            position: relative;
+        }
+
+        .top-navbar ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        .top-navbar ul li a:hover {
+            color: #ffcccc;
+        }
+
+        .top-navbar ul li .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #660000;
+            list-style: none;
+            padding: 10px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .top-navbar ul li:hover .dropdown-menu {
+            display: block;
+        }
+
+        .top-navbar ul li .dropdown-menu li {
+            padding: 5px 20px;
+        }
+
+        .top-navbar ul li .dropdown-menu li a {
+            color: #fff;
+            font-size: 0.9rem;
+            text-decoration: none;
+        }
+
+        .top-navbar ul li .dropdown-menu li a:hover {
+            color: #ffcccc;
+        }
+
+        /* Button Hover Effect */
+        .btn {
+            background-color: #660000;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .btn:hover {
+            background-color: #ff3333;
+            transform: translateY(-3px);
+            box-shadow: 0 4px 6px rgba(255, 51, 51, 0.4);
+        }
+
+        /* Section Content */
+        .content {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #330000; /* Darker Red */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .content h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #ffcccc;
+            font-size: 2.5rem;
+        }
+
+        .content p {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .content a {
+            color: #ffcccc;
+            text-decoration: underline;
+        }
+
+        .content a:hover {
+            color: #fff;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #8b0000;
+            color: #fff;
+            position: sticky;
+            bottom: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Top Navbar -->
+    <nav class="top-navbar">
+        <div class="logo">Spiritual Satya</div>
+        <ul>
+            <li><a href="#tantra">Tantra</a></li>
+            <li><a href="#mantra">Mantra</a></li>
+            <li><a href="#yantra">Yantra</a></li>
+            <li><a href="#kundalini">Kundalini</a></li>
+            <li><a href="#kundali">Kundali</a></li>
+            <li><a href="#stotram">Stotram</a></li>
+            <li>
+                <a href="#ved">Ved ▼</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#rigved">Rig Ved</a></li>
+                    <li><a href="#yajurved">Yajur Ved</a></li>
+                    <li><a href="#samved">Sam Ved</a></li>
+                    <li><a href="#arthved">Atharva Ved</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Content Section -->
+    <div class="content">
+        <h1>Spiritual Satya</h1>
+        <p>
+            Spirituality is the ultimate journey toward discovering the essence of existence. It transcends boundaries and connects individuals with the universal consciousness. According to Vedic wisdom, the realization of self and harmony with the universe is the ultimate goal.
+        </p>
+        <p>
+            Explore the secrets of <strong>Tantra, Mantra, Yantra, Kundalini, and the ancient Vedas</strong> to understand the profound truth that lies beyond materialistic existence. These practices are pathways to enlightenment and liberation, offering timeless knowledge for the modern generation.
+        </p>
+        <p>
+            Begin your spiritual journey by delving into sacred texts, meditating, and practicing rituals that align the body, mind, and soul. <a href="#stotram">Discover powerful stotrams</a> that invoke divine blessings and elevate consciousness.
+        </p>
+        <button class="btn">Learn More</button>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        © 2025 Spiritual Satya | Designed with devotion.
+    </footer>
+</body>
+</html>

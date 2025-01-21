@@ -1,0 +1,138 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+/* Top Navbar */
+.top-navbar {
+    background-color: #ff4b5c;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.top-navbar .logo h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+}
+
+.top-navbar .menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.top-navbar .menu li {
+    position: relative;
+    margin: 0 15px;
+}
+
+.top-navbar .menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.top-navbar .menu a:hover {
+    color: #ffe3e3;
+}
+
+.top-navbar .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #e63946;
+    list-style: none;
+    padding: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.dropdown-menu li {
+    margin: 0;
+    padding: 5px 20px;
+}
+
+.dropdown-menu li a {
+    color: #fff;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+.dropdown-menu li a:hover {
+    color: #ffe3e3;
+}
+
+/* Left Sub-Navbar */
+.left-sub-navbar {
+    background-color: #ff4b5c;
+    padding: 20px;
+    position: fixed;
+    top: 70px; /* Adjust to align with top navbar */
+    left: 0;
+    width: 250px;
+    height: calc(100% - 70px); /* Adjust for top navbar height */
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+
+.left-sub-navbar h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #ffe3e3;
+    padding-bottom: 10px;
+}
+
+.left-sub-navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.left-sub-navbar ul li {
+    margin: 10px 0;
+}
+
+.left-sub-navbar ul li a {
+    text-decoration: none;
+    color: #ffe3e3;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.left-sub-navbar ul li a:hover {
+    color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .top-navbar .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-sub-navbar {
+        width: 200px;
+    }
+}

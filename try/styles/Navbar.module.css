@@ -1,0 +1,41 @@
+.navbar {
+    background-color: #8b0000;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    color: #fff;
+  }
+  
+  .menu {
+    list-style: none;
+    display: flex;
+  }
+  
+  .menu li {
+    margin: 0 15px;
+    position: relative;
+  }
+  
+  .menu a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .dropdownMenu {
+    display: none;
+    position: absolute;
+    background-color: #b22222;
+  }
+  
+  .dropdown:hover .dropdownMenu {
+    display: block;
+  }
+  

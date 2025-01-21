@@ -1,0 +1,81 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background: #000;
+    color: #fff;
+    height: 100%;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    height: 100vh;
+    background: url('shiv_dark_red.jpg') no-repeat center center/cover; /* Add your Shiva image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay for readability */
+    z-index: 1;
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+}
+
+.main-title {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #ff4b5c;
+    text-transform: uppercase;
+    margin: 0;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.tagline {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    color: #ffe3e3;
+}
+
+.explore-button {
+    margin-top: 20px;
+    padding: 15px 30px;
+    background: #ff4b5c;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.explore-button:hover {
+    background: #e63946;
+    transform: scale(1.05);
+}
+
+/* Keyframes for Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
